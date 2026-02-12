@@ -1,0 +1,113 @@
+.hub-page {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.hub-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 3rem;
+}
+
+.hub-subtitle {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-family: var(--font-main);
+    letter-spacing: 1px;
+}
+
+.hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.hub-card {
+    background: var(--bg-card);
+    border: 1px solid #333;
+    border-radius: 0;
+    /* Sharp corners */
+    overflow: hidden;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.hub-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--neon-primary);
+    box-shadow: 4px 4px 0 var(--neon-primary);
+}
+
+.hub-image-wrapper {
+    position: relative;
+    aspect-ratio: 16/9;
+    border-bottom: 1px solid #333;
+}
+
+.hub-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.hub-card:hover .hub-image {
+    filter: grayscale(0%);
+}
+
+.hub-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--neon-primary);
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    border-radius: 0;
+    font-family: var(--font-main);
+    font-weight: bold;
+}
+
+.hub-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hub-author {
+    color: var(--neon-primary);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-main);
+}
+
+.hub-title {
+    font-size: 1.8rem;
+    font-family: var(--font-display);
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.hub-excerpt {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+    font-family: var(--font-main);
+}
+
+.hub-card .btn-neon.small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    border-width: 1px;
+}

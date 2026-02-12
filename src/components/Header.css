@@ -1,0 +1,135 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg-dark);
+    border-bottom: 2px solid #222;
+    padding: 1.5rem 0;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 2rem;
+    font-family: var(--font-display);
+    font-weight: 400;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo-icon {
+    color: var(--neon-primary);
+    filter: drop-shadow(0 0 5px var(--neon-primary));
+}
+
+.highlight {
+    color: var(--neon-primary);
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+    margin: 0 2rem;
+}
+
+.search-bar input {
+    width: 100%;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 0;
+    /* Sharp corners */
+    padding: 0.8rem 1rem 0.8rem 3rem;
+    color: var(--text-main);
+    outline: none;
+    font-family: var(--font-main);
+    transition: all 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: var(--neon-primary);
+    background: #000;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-item {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: var(--text-main);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--neon-primary);
+    transition: width 0.2s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icon-btn {
+    color: var(--text-main);
+    position: relative;
+    transition: color 0.2s;
+}
+
+.icon-btn:hover {
+    color: var(--neon-primary);
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--neon-primary);
+    color: white;
+    font-size: 0.7rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: var(--font-main);
+}
