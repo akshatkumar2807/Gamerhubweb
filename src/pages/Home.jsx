@@ -19,7 +19,7 @@ const Home = () => {
     const categories = [
         { id: 1, name: 'Keyboards', image: 'https://images.unsplash.com/photo-1595225476474-87563907a212?w=500&auto=format&fit=crop&q=60' },
         { id: 2, name: 'Audio', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500&auto=format&fit=crop&q=60' },
-        { id: 3, name: 'Mice', image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&auto=format&fit=crop&q=60' }
+        { id: 3, name: 'Mouse', image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&auto=format&fit=crop&q=60' }
     ];
 
     return (

@@ -52,7 +52,7 @@ const Shop = () => {
                 <div className="filters">
                     <button className="filter-btn active" onClick={() => handleFilter('All')}>All</button>
                     <button className="filter-btn" onClick={() => handleFilter('Keyboards')}>Keyboards</button>
-                    <button className="filter-btn" onClick={() => handleFilter('Mice')}>Mice</button>
+                    <button className="filter-btn" onClick={() => handleFilter('Mouse')}>Mouse</button>
                     <button className="filter-btn" onClick={() => handleFilter('Audio')}>Audio</button>
                 </div>
             </div>
