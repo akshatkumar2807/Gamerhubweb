@@ -19,12 +19,29 @@
   padding: 0;
 }
 
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
 body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   font-family: var(--font-main);
   min-height: 100vh;
   overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+input,
+textarea {
+  user-select: text;
+  cursor: text;
 }
 
 h1,

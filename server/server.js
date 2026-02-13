@@ -72,6 +72,60 @@ const seeds = [
         category: "Streaming",
         rating: 4.4,
         isNew: false
+    },
+    {
+        id: 7,
+        name: "StealthOps Mechanic 60%",
+        price: 109.99,
+        image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=80&w=1000",
+        category: "Keyboards",
+        rating: 4.5,
+        isNew: false
+    },
+    {
+        id: 8,
+        name: "ViperSpeed Wireless",
+        price: 69.99,
+        image: "https://images.unsplash.com/photo-1605773527852-c546a8584ea3?w=500&auto=format&fit=crop&q=60",
+        category: "Mouse",
+        rating: 4.7,
+        isNew: true
+    },
+    {
+        id: 9,
+        name: "PixelBuds Gaming Pro",
+        price: 199.99,
+        image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&auto=format&fit=crop&q=60",
+        category: "Earphones",
+        rating: 4.8,
+        isNew: true
+    },
+    {
+        id: 10,
+        name: "BassRaider Wired Earbuds",
+        price: 49.99,
+        image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=500&auto=format&fit=crop&q=60",
+        category: "Earphones",
+        rating: 4.3,
+        isNew: false
+    },
+    {
+        id: 11,
+        name: "BoomBox RGB Soundbar",
+        price: 89.99,
+        image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&auto=format&fit=crop&q=60",
+        category: "Speakers",
+        rating: 4.6,
+        isNew: true
+    },
+    {
+        id: 12,
+        name: "Arena Surround 2.1 System",
+        price: 249.99,
+        image: "https://images.unsplash.com/photo-1558403194-611308249627?w=500&auto=format&fit=crop&q=60",
+        category: "Speakers",
+        rating: 4.9,
+        isNew: false
     }
 ];
 

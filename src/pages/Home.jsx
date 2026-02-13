@@ -42,12 +42,12 @@ const Home = () => {
                 <h2 className="section-title">Featured <span style={{ color: 'var(--neon-primary)' }}>Gear</span></h2>
                 <div className="category-grid">
                     {categories.map(cat => (
-                        <div key={cat.id} className="category-card">
+                        <Link to={`/shop?search=${cat.name}`} key={cat.id} className="category-card">
                             <img src={cat.image} alt={cat.name} />
                             <div className="category-overlay">
                                 <h3>{cat.name}</h3>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </section>

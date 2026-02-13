@@ -7,7 +7,7 @@ const Hub = () => {
             id: 1,
             title: "The Future of VR Gaming",
             excerpt: "Dive deep into the latest advancements in virtual reality technology and what it means for the next generation of gamers.",
-            image: "https://images.unsplash.com/photo-1622979135225-d2ba269fb1bd?w=500&auto=format&fit=crop&q=60",
+            image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&q=80&w=500",
             date: "Oct 12, 2025",
             author: "Alex 'Glitch' Rider"
         },

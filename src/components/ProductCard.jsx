@@ -7,11 +7,11 @@ const ProductCard = ({ product }) => {
     const { addToCart } = useCart();
     return (
         <div className="product-card">
-            <div className="card-image-wrapper">
+            <div className="card-image-wrapper" onClick={() => addToCart(product)} style={{ cursor: 'pointer' }}>
                 <img src={product.image} alt={product.name} className="product-image" />
                 {product.isNew && <span className="tag new">New Arrival</span>}
                 <div className="overlay">
-                    <button className="quick-view-btn">Quick View</button>
+                    <button className="quick-view-btn">Add to Cart</button>
                 </div>
             </div>
             <div className="card-content">
